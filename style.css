@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    
+}
+
+header{
+    background-color: #d9d9d9;
+}
+
+.logo{
+    padding: 20px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.academy{
+    height: 100vh;
+    background: url(images/Rectangle\ 2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.academy h2{
+    font-size: 4em;
+    font-weight: 700;  
+}
+
+.texte{
+    position: relative;
+    color: white;
+    z-index: 99; 
+    text-align: center;
+    max-width: 700px;
+}
+
+.academy p{
+    font-size: 2rem;
+}
+
+/* SECTION FORMATION */
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 250px;
+    gap: 15px;
+}
+
+.formation{
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* SECTION NOS PROJETS */
+
+.nos-projets{
+    background-color: #D39393;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.nos-projets h2{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+
+@media screen and (max-width:768px){
+    nav{
+        flex-direction: column;
+        gap: 20px;
+        padding: 32px 0;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        padding: 0;
+    }
+
+    .academy h2{
+        font-size: 3em;
+    }
+
+    .academy p{
+        font-size: 1.2rem;
+    }
+
+    .texte{
+        padding: 0 10px;
+    }
+
+
+}
+
+/* 
+Desktop 1500px
+Tablette 768px
+Mobile L 425px
+*/
+
